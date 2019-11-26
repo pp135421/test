@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>xxx</title>
+	<meta charset="utf-8">
+	<script src="./vue.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="app">
+
+<span>Multiline message is:</span>
+<p style="white-space: pre-line;">{{ message }}</p>
+<br>
+<textarea v-model.trim="message" placeholder="add multiple lines"></textarea>
+
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+new Vue({
+	el: '#app',
+	data: {
+	    a: 1,
+	    message: '',
+	},
+	methods: {
+	  	xx: function() {
+	  		alert(111);
+	  	},
+	  	yy: function() {
+	  		alert(222);
+	  	}
+	}
+})
+</script>
